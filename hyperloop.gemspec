@@ -29,6 +29,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'react-rails', '~> 1.9.0'
   s.add_dependency 'therubyracer'
   s.add_dependency 'react-router-rails', '~> 0.13.3'
-  s.add_dependency 'hyper-router'
+  s.add_dependency 'hyper-router', '>= 2.4.1'
   s.add_runtime_dependency 'rails', '>= 4.0.0'
 end
