@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency 'hyper-model'
-  s.add_dependency 'hyper-spec'
+  #s.add_dependency 'hyper-spec'
   s.add_dependency 'opal-rails', '>= 0.8.1'
   s.add_dependency 'opal-browser'
   s.add_dependency 'react-rails', '~> 1.9.0'
