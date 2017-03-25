@@ -23,12 +23,12 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency 'hyper-model'
-  #s.add_dependency 'hyper-spec'
+  # react_router_rails not working with rails 5.1 so we are apulling it for now.
+  # s.add_dependency 'hyper-router', '>= 2.4.1'
+  # s.add_dependency 'react-router-rails', '~> 0.13.3'
   s.add_dependency 'opal-rails', '>= 0.8.1'
   s.add_dependency 'opal-browser'
   s.add_dependency 'react-rails', '~> 1.9.0'
   s.add_dependency 'therubyracer'
-  s.add_dependency 'react-router-rails', '~> 0.13.3'
-  s.add_dependency 'hyper-router', '>= 2.4.1'
   s.add_runtime_dependency 'rails', '>= 4.0.0'
 end
