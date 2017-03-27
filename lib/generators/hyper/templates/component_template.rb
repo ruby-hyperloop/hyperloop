@@ -1,4 +1,4 @@
-module Components
+
   <%- @modules.each do |module_name| %><%= "  "* @indet %>module <%= module_name.camelize %><%- @indet += 1 %>
   <%- end %><%="  "* @indet %>class <%= @file_name %> < Hyperloop::Component
 
@@ -38,4 +38,4 @@ module Components
   <%="  "* @indet %>end
 <%="  "* @indet %>end
   <%- @modules.each do %><%- @indet -= 1 %><%="  "* @indet %>end
-  <%- end %>end
+  <%- end %>

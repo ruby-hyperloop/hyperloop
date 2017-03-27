@@ -11,7 +11,7 @@ module Hyperloop
     end
 
     def inject_engine_to_routes
-        route 'mount Hyperloop::Engine => \'/hyperloop\''
+        route 'mount Hyperloop::Engine => \'/rr\''
     end
 
     def create_hyperloop_directories
@@ -22,13 +22,13 @@ module Hyperloop
     end
 
     def create_policies_directory
-      create_file 'app/policies/hyperloop_application_policy.rb', <<-RUBY
-# app/policies/application_policy
+      create_file 'app/policies/application_policy.rb', <<-RUBY
+        # app/policies/application_policy
 
-# Policies regulate access to your public models
-# The following policy will open up full access (but only in development)
-# The policy system is very flexible and powerful.  See the documentation
-# for complete details.
+        # Policies regulate access to your public models
+        # The following policy will open up full access (but only in development)
+        # The policy system is very flexible and powerful.  See the documentation
+        # for complete details.
 class Hyperloop::ApplicationPolicy
   # Allow any session to connect:
   always_allow_connection
@@ -38,6 +38,18 @@ class Hyperloop::ApplicationPolicy
   allow_change(to: :all, on: [:create, :update, :destroy]) { true }
 end unless Rails.env.production?
         RUBY
+    end
+
+    def create_initializer
+      create_file 'config/initializers/hyperloop.rb', <<-RUBY
+        
+Hyperloop.configuration do |config|
+  config.transport = :simple_poller
+  config.import 'reactrb/auto-import'
+end
+
+        RUBY
+
     end
 
     def add_gems
