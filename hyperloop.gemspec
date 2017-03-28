@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'hyper-model'
   # react_router_rails not working with rails 5.1 so we are apulling it for now.
-  # s.add_dependency 'hyper-router', '>= 2.4.1'
+  s.add_dependency 'hyper-router', '>= 4.0.0'
   # s.add_dependency 'react-router-rails', '~> 0.13.3'
   s.add_dependency 'opal-rails', '>= 0.8.1'
   s.add_dependency 'opal-browser'

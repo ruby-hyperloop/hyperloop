@@ -1,7 +1,9 @@
 require 'hyperloop-config'
 require 'rails/generators'
 require 'hyper-model'
-#Hyperloop.import 'react_router', client_only: true
+
+Hyperloop.import 'reactrb/auto-import'
+Hyperloop.import 'hyper-router'
 
 require 'generators/hyperloop/install_generator'
 require 'generators/hyper/component_generator'
@@ -11,6 +13,5 @@ require 'react-rails'
 require 'hyper-model'
 require 'opal-browser'
 require 'therubyracer'
-#require 'hyper-router'
-#require 'react/router/rails'
+require 'hyper-router'
 require 'hyperloop/version'
