@@ -11,7 +11,7 @@ module Hyperloop
     end
 
     def inject_engine_to_routes
-        route 'mount Hyperloop::Engine => \'/rr\''
+        route 'mount Hyperloop::Engine => \'/hyperloop\''
     end
 
     def create_hyperloop_directories
@@ -45,7 +45,6 @@ end unless Rails.env.production?
         
 Hyperloop.configuration do |config|
   config.transport = :simple_poller
-  config.import 'reactrb/auto-import'
 end
 
         RUBY
