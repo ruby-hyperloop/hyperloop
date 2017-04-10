@@ -1,27 +1,44 @@
+# Welcome to Hyperloop
+
+![Screen](https://github.com/ruby-hyperloop/hyperloop/blob/master/hyperloop-logo-small-pink.png)
 
 ## Hyperloop - The Complete Isomorphic Ruby Framework
 
-Hyperloop works great with new or existing rails apps, so it's pain free to introduce it to your application.
+### Simplicity
+Build interactive Web applications quickly. **Hyperloop** encourages rapid development with clean, pragmatic design. With developer productivity as our highest goal, **Hyperloop** takes care of much of the hassle of Web development, so you can focus on innovation and delivering end-user value.
 
-Hyperloop has been tested with the most recent Ruby On Rails verions:<br> Rails (4.2), Rails (5.0) and the last Rails (5.1.0.rc1).
+### Isomorphic Ruby
+One language. One model. One set of tests. The same business logic and domain models running on the clients and the server. Hyperloop is fully integrated with Rails and also gives you unfettered access to the complete universe of JavaScript libraries (including React) from within your Ruby code. Hyperloop lets you build beautiful interactive user interfaces in Ruby.
 
+### Complete Architecture
+Everything has a place in our architecture. **C**omponents deliver interactive user experiences, **O**perations encapsulate business logic, **M**odels magically synchronize data between clients and servers, **P**olicies govern authorization and **S**tores hold local state.
 
-### Setup
+## Getting Started
 
-In your `Gemfile`
-
+1. Update your Gemfile:
+        
 ```ruby
+#Gemfile
+
 gem 'hyperloop'
 ```
 
-then
+2. At the command prompt, update your bundle :
 
-```ruby
-bundle install
-```
+        $ bundle update
 
-Once the Hyperloop Gem and all its dependencies have been installed, it's time to run the hyperloop install generator.
+3. Run the hyperloop install generator:
 
-```ruby
-rails g hyperloop:install
-```
+        $ rails g hyperloop:install
+
+4. Follow the guidelines to start developing your application. You may find
+   the following resources handy:
+    * [Getting Started with Hyperloop](http://ruby-hyperloop.io/start)
+    * [Hyperloop Guides](http://ruby-hyperloop.io/docs/architecture)
+    * [Hyperloop Tutorial](http://ruby-hyperloop.io/tutorials)
+
+
+## License
+
+Ruby on Rails is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+
