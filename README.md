@@ -1,8 +1,16 @@
-# Welcome to Hyperloop
+<p align="center">
+	<a href="http://ruby-hyperloop.io/" alt="Hyperloop" title="Hyperloop">
+		<img src="https://github.com/ruby-hyperloop/hyperloop/blob/master/hyperloop-logo-small-pink.png">
+	</a>
+</p>
 
-![Screen](https://github.com/ruby-hyperloop/hyperloop/blob/master/hyperloop-logo-small-pink.png)
+<h1 align="center">
+	Hyperloop<br>
+	<h3>The Complete Isomorphic Ruby Framework</h3>
+</h1>
 
-## Hyperloop - The Complete Isomorphic Ruby Framework
+<p align="center">
+  
 
 ### Simplicity
 Build interactive Web applications quickly. **Hyperloop** encourages rapid development with clean, pragmatic design. With developer productivity as our highest goal, **Hyperloop** takes care of much of the hassle of Web development, so you can focus on innovation and delivering end-user value.
@@ -12,6 +20,8 @@ One language. One model. One set of tests. The same business logic and domain mo
 
 ### Complete Architecture
 Everything has a place in our architecture. **C**omponents deliver interactive user experiences, **O**perations encapsulate business logic, **M**odels magically synchronize data between clients and servers, **P**olicies govern authorization and **S**tores hold local state.
+
+</p>
 
 ## Getting Started
 
