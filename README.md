@@ -5,9 +5,10 @@
 </p>
 
 <h1 align="center">
-	Hyperloop<br>
-	<h3>The Complete Isomorphic Ruby Framework</h3>
+	Hyperloop
 </h1>
+
+<h3 align="center">The Complete Isomorphic Ruby Framework</h3>
 
 <p align="center">
   
@@ -50,5 +51,5 @@ gem 'hyperloop'
 
 ## License
 
-Ruby on Rails is released under the [MIT License](http://www.opensource.org/licenses/MIT).
+Hyperloop is released under the [MIT License](http://www.opensource.org/licenses/MIT).
 
