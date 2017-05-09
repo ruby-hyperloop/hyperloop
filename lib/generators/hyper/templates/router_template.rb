@@ -29,7 +29,7 @@ module Components
   <%="  "* @indet %>end
 
   <%="  "* @indet %>def show # note that the top level router has a show method NOT render
-  <%="  "* @indet %>  div do
+  <%="  "* @indet %>  DIV do
   <%="  "* @indet %>    #    content to display on every route
   <%="  "* @indet %>    # link generates an anchor tag.
   <%="  "* @indet %>    link(to: :subroute3, params: {user_id: 12}, class: "link-class") { "Click to go to subroute3" }
