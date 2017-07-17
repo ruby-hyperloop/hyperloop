@@ -5,6 +5,8 @@ module Hyperloop
     def inject_react_file_js
       append_file 'app/assets/javascripts/application.js' do
         <<-'JS'
+//= require jquery
+//= require jquery_ujs
 //= require hyperloop-loader
         JS
       end
@@ -42,7 +44,7 @@ end unless Rails.env.production?
 
     def create_initializer
       create_file 'config/initializers/hyperloop.rb', <<-RUBY
-        
+
 Hyperloop.configuration do |config|
   config.transport = :simple_poller
 end
