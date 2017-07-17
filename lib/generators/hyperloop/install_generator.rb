@@ -25,12 +25,12 @@ module Hyperloop
 
     def create_policies_directory
       create_file 'app/policies/application_policy.rb', <<-RUBY
-        # app/policies/application_policy
+# app/policies/application_policy
 
-        # Policies regulate access to your public models
-        # The following policy will open up full access (but only in development)
-        # The policy system is very flexible and powerful.  See the documentation
-        # for complete details.
+# Policies regulate access to your public models
+# The following policy will open up full access (but only in development)
+# The policy system is very flexible and powerful.  See the documentation
+# for complete details.
 class Hyperloop::ApplicationPolicy
   # Allow any session to connect:
   always_allow_connection
@@ -44,13 +44,14 @@ end unless Rails.env.production?
 
     def create_initializer
       create_file 'config/initializers/hyperloop.rb', <<-RUBY
-
+# config/initializers/hyperloop.rb
+# If you are not using ActionCable, see http://ruby-hyperloop.io/docs/models/configuring-transport/
 Hyperloop.configuration do |config|
-  config.transport = :simple_poller
+  config.transport = :action_cable
+  config.import 'reactrb/auto-import'
 end
 
         RUBY
-
     end
 
     def add_gems
