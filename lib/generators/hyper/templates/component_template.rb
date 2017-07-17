@@ -32,7 +32,7 @@
   <%="  "* @indet %>end
 
   <%="  "* @indet %>def render
-  <%="  "* @indet %>  div do
+  <%="  "* @indet %>  DIV do
   <%="  "* @indet %>    "<%= (@modules+[@file_name]).join('::') %>"
   <%="  "* @indet %>  end
   <%="  "* @indet %>end
