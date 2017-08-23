@@ -16,15 +16,13 @@
 <img src="http://ruby-hyperloop.io/images/githubhyperloopbadge.png">
 </a>
 
-<a href="http://ruby-hyperloop.io/tutorials/hyperlooprails/webpacker/" alt="Tutorial page" title="Tutorial page">
-<img src="http://ruby-hyperloop.io/images/githubtutorialbadge.png">
-</a>
-
 <a href="https://gitter.im/ruby-hyperloop/chat" alt="Gitter chat" title="Gitter chat">
 <img src="http://ruby-hyperloop.io/images/githubgitterbadge.png">
 </a>
 
 </div>
+
+## Hyperloop GEM
 
 ## Getting Started
 
