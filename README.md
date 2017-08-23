@@ -1,28 +1,30 @@
-<p align="center">
-	<a href="http://ruby-hyperloop.io/" alt="Hyperloop" title="Hyperloop">
-		<img src="https://github.com/ruby-hyperloop/hyperloop/blob/master/hyperloop-logo-small-pink.png">
-	</a>
-</p>
-
-<h1 align="center">
-	Hyperloop
-</h1>
-
-<h3 align="center">The Complete Isomorphic Ruby Framework</h3>
+<div class="githubhyperloopheader">
 
 <p align="center">
-  
 
-### Simplicity
-Build interactive Web applications quickly. **Hyperloop** encourages rapid development with clean, pragmatic design. With developer productivity as our highest goal, **Hyperloop** takes care of much of the hassle of Web development, so you can focus on innovation and delivering end-user value.
-
-### Isomorphic Ruby
-One language. One model. One set of tests. The same business logic and domain models running on the clients and the server. Hyperloop is fully integrated with Rails and also gives you unfettered access to the complete universe of JavaScript libraries (including React) from within your Ruby code. Hyperloop lets you build beautiful interactive user interfaces in Ruby.
-
-### Complete Architecture
-Everything has a place in our architecture. **C**omponents deliver interactive user experiences, **O**perations encapsulate business logic, **M**odels magically synchronize data between clients and servers, **P**olicies govern authorization and **S**tores hold local state.
+<a href="http://ruby-hyperloop.io/" alt="Hyperloop" title="Hyperloop">
+<img width="350px" src="http://ruby-hyperloop.io/images/hyperloop-github-logo.png">
+</a>
 
 </p>
+
+<h2 align="center">The Complete Isomorphic Ruby Framework</h2>
+
+<br>
+
+<a href="http://ruby-hyperloop.io/" alt="Hyperloop" title="Hyperloop">
+<img src="http://ruby-hyperloop.io/images/githubhyperloopbadge.png">
+</a>
+
+<a href="http://ruby-hyperloop.io/tutorials/hyperlooprails/webpacker/" alt="Tutorial page" title="Tutorial page">
+<img src="http://ruby-hyperloop.io/images/githubtutorialbadge.png">
+</a>
+
+<a href="https://gitter.im/ruby-hyperloop/chat" alt="Gitter chat" title="Gitter chat">
+<img src="http://ruby-hyperloop.io/images/githubgitterbadge.png">
+</a>
+
+</div>
 
 ## Getting Started
 
