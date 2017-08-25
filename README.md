@@ -20,6 +20,8 @@
 <img src="http://ruby-hyperloop.io/images/githubgitterbadge.png">
 </a>
 
+[![Gem Version](https://badge.fury.io/rb/hyperloop.svg)](https://badge.fury.io/rb/hyperloop)
+
 </div>
 
 ## Hyperloop GEM
