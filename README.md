@@ -20,9 +20,11 @@
 <img src="http://ruby-hyperloop.io/images/githubgitterbadge.png">
 </a>
 
+[![Gem Version](https://badge.fury.io/rb/hyperloop.svg)](https://badge.fury.io/rb/hyperloop)
+
 </div>
 
-## Hyperloop GEM [![Gem Version](https://badge.fury.io/rb/hyperloop.svg)](https://badge.fury.io/rb/hyperloop)
+## Hyperloop GEM 
 
 Build interactive Web applications quickly. Hyperloop encourages rapid development with clean, pragmatic design. With developer productivity as our highest goal, Hyperloop takes care of much of the hassle of Web development, so you can focus on innovation and delivering end-user value.
 
