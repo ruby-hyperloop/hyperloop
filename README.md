@@ -42,11 +42,11 @@ gem 'hyperloop'
 
 2. At the command prompt, update your bundle :
 
-$ bundle update
+        $ bundle update
 
 3. Run the hyperloop install generator:
 
-$ rails g hyperloop:install
+        $ rails g hyperloop:install
 
 4. Follow the guidelines to start developing your application. You may find
    the following resources handy:
