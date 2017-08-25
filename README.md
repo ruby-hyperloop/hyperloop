@@ -54,6 +54,14 @@ gem 'hyperloop'
     * [Hyperloop Guides](http://ruby-hyperloop.io/docs/architecture)
     * [Hyperloop Tutorial](http://ruby-hyperloop.io/tutorials)
 
+## Community
+
+#### Getting Help
+Please **do not post** usage questions to GitHub Issues. For these types of questions use our [Gitter chatroom](https://gitter.im/ruby-hyperloop/chat) or [StackOverflow](http://stackoverflow.com/questions/tagged/hyperloop).
+
+#### Submitting Bugs and Enhancements
+[GitHub Issues](https://github.com/ruby-hyperloop/hyperloop/issues) is for suggesting enhancements and reporting bugs. Before submiting a bug make sure you do the following:
+* Check out our [contributing guide](https://github.com/ruby-hyperloop/hyperloop/blob/master/CONTRIBUTING.md) for info on our release cycle.
 
 ## License
 
