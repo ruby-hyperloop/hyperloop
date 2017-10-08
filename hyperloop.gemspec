@@ -22,8 +22,8 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.require_paths = ["lib"]
 
-  s.add_dependency 'hyper-model', '0.15.1'
-  s.add_dependency 'hyper-router', '4.2.4'
+  s.add_dependency 'hyper-model', '0.15.2'
+  s.add_dependency 'hyper-router', '4.2.5'
   s.add_dependency 'opal-browser'
   s.add_dependency 'opal-rails', '~> 0.9.3'
   s.add_dependency 'react-rails', '~> 2.3.0'
