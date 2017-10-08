@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.version     = Hyperloop::VERSION
   s.summary     = 'Hyperloop stack and generators for Rails'
   s.description = 'This gem provide the full hyperloop stack for rails plus generators for Hyperloop elements'
-  s.authors     = ['Loic Boutet', 'Adam George', 'Mitch VanDuyn']
+  s.authors     = ['Loic Boutet', 'Adam George', 'Mitch VanDuyn', 'janbiedermann']
   s.email       = 'loic@boutet.com'
   s.homepage    = "http://ruby-hyperloop.io"
   s.license     = "MIT"
@@ -22,8 +22,8 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.require_paths = ["lib"]
 
-  s.add_dependency 'hyper-model', '0.15.0'
-  s.add_dependency 'hyper-router', '>= 4.0.0'
+  s.add_dependency 'hyper-model', '0.15.1'
+  s.add_dependency 'hyper-router', '4.2.4'
   s.add_dependency 'opal-browser'
   s.add_dependency 'opal-rails', '~> 0.9.3'
   s.add_dependency 'react-rails', '~> 2.3.0'
