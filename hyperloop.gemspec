@@ -15,9 +15,9 @@ Gem::Specification.new do |s|
   s.files       = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   s.require_paths = ['lib']
 
-  s.add_dependency 'hyper-model', '0.15.0-autobahn-a6'
-  s.add_dependency 'hyper-router', '4.2.6-autobahn-a6'
-  s.add_dependency 'hyperloop-config', '0.15.0-autobahn-a6'
+  s.add_dependency 'hyper-model', '0.15.0-autobahn-a8'
+  s.add_dependency 'hyper-router', '4.2.6-autobahn-a8'
+  s.add_dependency 'hyperloop-config', '0.15.0-autobahn-a8'
   s.add_dependency 'opal-browser'
   s.add_dependency 'opal-rails', '~> 0.9.3'
   s.add_dependency 'react-rails', '~> 2.3.1'
