@@ -21,6 +21,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'opal-browser'
   s.add_dependency 'opal-rails', '~> 0.9.3'
   s.add_dependency 'react-rails', '~> 2.3.1'
-  s.add_dependency 'therubyracer', '>= 0.12.3'
+  s.add_dependency 'mini_racer', '~> 0.1.14'
   s.add_runtime_dependency 'rails', '>= 5.1.4'
 end
