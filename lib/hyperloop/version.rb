@@ -1,3 +1,3 @@
 module Hyperloop
-  VERSION = '0.5.8'
+  VERSION = '0.15.0-autobahn-a8'
 end
