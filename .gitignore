@@ -46,3 +46,4 @@ bower.json
 
 # ignore Idea
 .idea
+Gemfile.lock
