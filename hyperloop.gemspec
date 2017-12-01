@@ -15,9 +15,9 @@ Gem::Specification.new do |s|
   s.email       = ['loic@boutet.com', 'jan@kursator.com']
   s.homepage    = 'http://ruby-hyperloop.org'
   s.license     = 'MIT'
-  spec.metadata      = {
-    homepage_uri: 'http://ruby-hyperloop.org',
-    source_code_uri: 'https://github.com/ruby-hyperloop/hyperloop'
+  spec.metadata = {
+    "homepage_uri" => 'http://ruby-hyperloop.org',
+    "source_code_uri" => 'https://github.com/ruby-hyperloop/hyper-component'
   }
   s.files       = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(tasks)/}) }
   s.require_paths = ['lib']
