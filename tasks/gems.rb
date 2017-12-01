@@ -5,7 +5,7 @@ namespace :hyperloop do
       HYPERLOOP_REPOS.each do |repo|
         Dir.chdir(File.join('..', repo)) do
           puts "\033[0;32mBuilding gem for #{repo}:\033[0;30m"
-          `gem build #{branch}`
+          `gem build #{repo}`
         end
       end
     end
