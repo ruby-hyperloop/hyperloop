@@ -20,9 +20,12 @@ namespace :hyperloop do
             mtime = File.stat(gem).mtime
             mtime > gem_fst[0] ? [mtime, gem] : gem_fst
           end
+          
           if host
-            `gem inabox -g #{host} #{last_created_gem_fst[1]}`
+            puts "pushing #{last_created_gem_fst[1]} to #{host}"
+            `gem inabox #{last_created_gem_fst[1]} -g #{host}`
           else
+            puts "pushing #{last_created_gem_fst[1]}"
             `gem inabox #{last_created_gem_fst[1]}`
           end
         end
