@@ -1,3 +1,3 @@
 module Hyperloop
-  VERSION = '1.0.0-lap7'
+  VERSION = '1.0.0-lap8'
 end
