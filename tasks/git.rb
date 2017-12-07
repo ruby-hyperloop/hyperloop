@@ -51,8 +51,21 @@ namespace :hyperloop do
       end
     end
 
-    desc "push all local hyperloop repos, accepts remote as argument, default origin"
-    task :push do  
+    desc "push all local hyperloop repos, accepts remote and branch as arguments, defaults to origin and current branch"
+    task :push, [:remote, :branch] do |_, arg|
+      HYPERLOOP_REPOS.each do |repo|
+        Dir.chdir(File.join('..', repo)) do
+          puts "\033[0;32mPushing #{repo}:\033[0;30m"
+          puts
+          if arg[:remote] && arg[:branch]
+            puts `git push --set-upstream #{arg[:remote]} #{arg[:branch]}`
+          else
+            puts `git push`
+          end
+          puts
+          puts
+        end
+      end
     end
 
     desc "show git status for local hyperloop repos"
