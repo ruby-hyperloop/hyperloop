@@ -2,7 +2,6 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'hyperloop/version'
-require 'lib/hyper-router/version'
 
 Gem::Specification.new do |spec|
   spec.name        = 'hyperloop'
@@ -21,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'hyper-model', Hyperloop::VERSION
-  spec.add_dependency 'hyper-router', HyperRouter::VERSION
+  spec.add_dependency 'hyper-router', Hyperloop::ROUTERVERSION
   spec.add_dependency 'hyperloop-config', Hyperloop::VERSION
   spec.add_dependency 'opal-browser', '~> 0.2.0'
   spec.add_dependency 'opal-rails', '~> 0.9.3'
