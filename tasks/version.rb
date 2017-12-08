@@ -16,13 +16,15 @@ namespace :hyperloop do
       end
     end
 
-    def set_version(repo, version)
+    def set_version(repo, version, hrversion = nil)
       fv_arr = file_version_for(repo)
       out = ''
       File.open(fv_arr[0] + '.rb', 'rt+') do |f|
         f.each_line do |line|
-          if /VERSION/.match?(line)
+          if /\sVERSION/.match?(line)
             out << line.sub(/VERSION = ['"][\w.-]+['"]/, "VERSION = '#{version}'" )
+          elsif hrversion && /\sROUTERVERSION/.match?(line)
+            out << line.sub(/ROUTERVERSION = ['"][\w.-]+['"]/, "ROUTERVERSION = '#{hrversion}'" )
           else
             out << line
           end
@@ -46,9 +48,9 @@ namespace :hyperloop do
           if repo == 'hyper-router'
             set_version(repo, hrversion)
             sv = hrversion
-          elsif repo == 'hyperloop-config'
-            # nothing
-            sv = version
+          elsif repo == 'hyperloop'
+            set_version(repo, version, hrversion)
+            sv = "#{version} #{hrversion}"
           else
             set_version(repo, version)
             sv = version
