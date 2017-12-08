@@ -12,7 +12,7 @@ namespace :hyperloop do
       when 'hyper-spec' then ['./lib/hyper-spec/version', 'HyperSpec::VERSION']
       when 'hyper-store' then ['./lib/hyper-store/version', 'HyperStore::VERSION']
       when 'hyperloop' then ['./lib/hyperloop/version', 'Hyperloop::VERSION']
-      when 'hyperloop-config' then ['../hyperloop/lib/hyperloop/version', 'Hyperloop::VERSION']
+      when 'hyperloop-config' then ['../lib/hyperloop/config/version', 'Hyperloop::Config::VERSION']
       end
     end
 
