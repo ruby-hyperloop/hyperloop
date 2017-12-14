@@ -46,7 +46,7 @@ namespace :hyperloop do
       end
       HYPERLOOP_REPOS.each do |repo|
         Dir.chdir(File.join('..', repo)) do
-          puts "\033[0;32mCreating new branch for #{repo}:\033[0;30m\t#{`git commit -am "#{message}"`}"
+          puts "\033[0;32mCommitting #{repo}:\033[0;30m\t#{`git commit -am "#{message}"`}"
         end
       end
     end
