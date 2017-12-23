@@ -68,10 +68,11 @@ namespace :hyperloop do
       end
     end
 
-    desc "show git status for local hyperloop repos"
+    desc "update remotes and show git status for local hyperloop repos"
     task :status do
       HYPERLOOP_REPOS.each do |repo|
         Dir.chdir(File.join('..', repo)) do
+          `git remote update`
           puts "\033[0;32mStatus for #{repo}:\033[0;30m"
           puts
           puts `git status`
