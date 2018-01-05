@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'opal-browser', '~> 0.2.0'
   spec.add_dependency 'opal-rails', '~> 0.9.3'
   spec.add_dependency 'react-rails', '>= 2.3.0', '< 2.5.0'
-  spec.add_dependency 'mini_racer', '~> 0.1.14'
+  spec.add_dependency 'mini_racer', '~> 0.1.15'
   spec.add_runtime_dependency 'rails', '>= 4.0.0'
   spec.add_development_dependency 'geminabox', '>= 0.13.11'
 end
