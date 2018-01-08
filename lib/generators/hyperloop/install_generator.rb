@@ -5,8 +5,6 @@ module Hyperloop
     def inject_react_file_js
       append_file 'app/assets/javascripts/application.js' do
         <<-'JS'
-//= require jquery
-//= require jquery_ujs
 //= require hyperloop-loader
         JS
       end
