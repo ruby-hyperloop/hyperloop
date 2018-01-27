@@ -9,7 +9,7 @@ module Hyper
         component_array = component.split('::')
         @modules = component_array[0..-2]
         @file_name = component_array.last
-        @indent = 1
+        @indent = 0
         template 'component_template.rb',
                  File.join('app/hyperloop/components',
                            @modules.map(&:downcase).join('/'),
