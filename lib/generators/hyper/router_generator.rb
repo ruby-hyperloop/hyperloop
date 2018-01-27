@@ -8,7 +8,7 @@
 #         component_array = component.split('::')
 #         @modules = component_array[0..-2]
 #         @file_name = component_array.last
-#         @indet = 1
+#         @indent = 0
 #         template 'router_template.rb',
 #                  File.join('app/views/components',
 #                            @modules.map(&:downcase).join('/'),
