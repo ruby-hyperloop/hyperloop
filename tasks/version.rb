@@ -25,6 +25,8 @@ namespace :hyperloop do
             out << line.sub(/VERSION = ['"][\w.-]+['"]/, "VERSION = '#{version}'" )
           elsif hrversion && /\sROUTERVERSION/.match?(line)
             out << line.sub(/ROUTERVERSION = ['"][\w.-]+['"]/, "ROUTERVERSION = '#{hrversion}'" )
+          elsif /\sHYPERLOOP_VERSION/.match?(line)
+            out << line.sub(/HYPERLOOP_VERSION = ['"][\w.-]+['"]/, "HYPERLOOP_VERSION = '#{version}'" )
           else
             out << line
           end
