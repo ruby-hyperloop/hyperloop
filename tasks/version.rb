@@ -26,7 +26,7 @@ namespace :hyperloop do
           elsif hrversion && /\sROUTERVERSION/.match?(line)
             out << line.sub(/ROUTERVERSION = ['"][\w.-]+['"]/, "ROUTERVERSION = '#{hrversion}'" )
           elsif /\sHYPERLOOP_VERSION/.match?(line)
-            out << line.sub(/HYPERLOOP_VERSION = ['"][\w.-]+['"]/, "HYPERLOOP_VERSION = '#{version}'" )
+            out << line.sub(/HYPERLOOP_VERSION = ['"][\w.-]+['"]/, "HYPERLOOP_VERSION = '#{hrversion}'" )
           else
             out << line
           end
@@ -48,7 +48,7 @@ namespace :hyperloop do
       HYPERLOOP_REPOS.each do |repo|
         Dir.chdir(File.join('..', repo)) do
           if repo == 'hyper-router'
-            set_version(repo, hrversion)
+            set_version(repo, hrversion, version)
             sv = hrversion
           elsif repo == 'hyperloop'
             set_version(repo, version, hrversion)
