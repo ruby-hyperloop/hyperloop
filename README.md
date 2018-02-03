@@ -1,3 +1,35 @@
+Lap 18  (Lap is hyperloop designation for release candidate)
+
+Install instructions:
+
+source https://gems.ruby-hyperloop.org
+
+gem "opal", git: "https://github.com/janbiedermann/opal.git", branch: "master"
+gem "opal-activesupport", git: "https://github.com/janbiedermann/opal-activesupport.git", branch: "master"
+gem "opal-jquery", git: "https://github.com/opal/opal-jquery.git", branch: "master"
+gem "opal-rails", git: "https://github.com/opal/opal-rails.git", branch: "master"
+
+gem 'hyperloop', '1.0.0-lap18'
+gem 'hyper-spec', '1.0.0-lap18'
+
+### meliorations
+works with opal 0.11 as above
+hyper-react fully functional, except for issues with react ref=, which are react issues
+hyper-react tests all relevant passing for opal 0.11 and react-rails 2.4
+various fixes everywhere around, for and due to opal 0.11
+
+### findings
+its not worth it not switching to opal 0.11 immediately, 0.11 is just so much better
+i think there is a security issue in hyper-operation (in addition to those in hyper-mesh) but i did not bother investigating further because: reasons
+my brain is too small for fixing while_loading with opal 0.11, while_loading works partially, 3 of 6 tests pass. The others passed with opal 0.10 by accident i guess. I really don't understand how this ever worked.
+
+
+
+
+
+
+
+
 <div class="githubhyperloopheader">
 
 <p align="center">
