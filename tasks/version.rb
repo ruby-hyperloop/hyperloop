@@ -57,7 +57,7 @@ namespace :hyperloop do
             set_version(repo, version)
             sv = version
           end
-          puts "\033[0;32ms#{repo} now at:\033[0;30m\t#{sv}"
+          puts "\033[0;32m#{repo} now at:\033[0;30m\t#{sv}"
         end
       end
     end
