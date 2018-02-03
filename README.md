@@ -3,7 +3,7 @@ Lap 18  (Lap is hyperloop designation for release candidate)
 Install instructions:
 
 source https://gems.ruby-hyperloop.org
-
+```
 gem "opal", git: "https://github.com/janbiedermann/opal.git", branch: "master"
 gem "opal-activesupport", git: "https://github.com/janbiedermann/opal-activesupport.git", branch: "master"
 gem "opal-jquery", git: "https://github.com/opal/opal-jquery.git", branch: "master"
@@ -11,7 +11,7 @@ gem "opal-rails", git: "https://github.com/opal/opal-rails.git", branch: "master
 
 gem 'hyperloop', '1.0.0-lap18'
 gem 'hyper-spec', '1.0.0-lap18'
-
+```
 ### meliorations
 works with opal 0.11 as above
 hyper-react fully functional, except for issues with react ref=, which are react issues
