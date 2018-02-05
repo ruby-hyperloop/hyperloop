@@ -12,7 +12,8 @@ gem 'hyper-spec', '1.0.0-lap20'
 ```
 ### bonifications
 works with standard opal 0.11 as above
-hyper-react fully functional, fantastic performance boost becasue of proper state handling
+hyper-react fully functional, fantastic performance boost because of proper state handling
+after_error callback
 various fixes here and there
 
 ### testing ruby-hyperloop gems
