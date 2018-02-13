@@ -1,20 +1,20 @@
-Lap 20  (Lap is hyperloop designation for release candidate)
+Lap 21  (Lap is hyperloop designation for release candidate)
 
-Install instructions:
+Install instructions for the latest lap:
 ```
 source https://gems.ruby-hyperloop.org
 
 gem "opal-jquery", git: "https://github.com/opal/opal-jquery.git", branch: "master"
 gem "opal-rails", git: "https://github.com/opal/opal-rails.git", branch: "master"
 
-gem 'hyperloop', '1.0.0-lap20'
-gem 'hyper-spec', '1.0.0-lap20'
+gem 'hyperloop', '~> 1.0.0.lap'
+gem 'hyper-spec', '~> 1.0.0.lap'
 ```
-### bonifications
+### lap21 advancements
 works with standard opal 0.11 as above
-hyper-react fully functional, fantastic performance boost because of proper state handling
-after_error callback
-various fixes here and there
+fixes for hyper-operation, dispatch_to only dispatches once to a channel for a ServerOp.run
+client side debugging messages for ActionCable websockets and :simple_poller in development environment
+correct server side logging/non-logging for :simple_poller 
 
 ### testing ruby-hyperloop gems
 See, section **Testing Ruby-Hyperloop**
