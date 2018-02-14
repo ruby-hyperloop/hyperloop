@@ -1,6 +1,6 @@
-##Developing and Contributing
+## Developing and Contributing
 
-###Version control
+### Version control
 
 We use semantic versioning.
 
@@ -14,7 +14,7 @@ This implies that all gems with the same Major revision should work together.  H
 per gem basis with the latest current version of all gems.  This means that if you do a bundle update you should
 have the latest tested version.  
 
-####Edge Development
+#### Edge Development
 
 During each major release development, stable sets of gems are pushed called X.0.0.lapN. For example to use the latest 2.0.0
 release candidate you would specify `gem 'hyperloop' '~> 2.0.0.lap1'`  and this will get you the highest numbered lap.
@@ -28,7 +28,7 @@ On github you will find
 + tags -> each release (including patches) will have a git tag associated.
 + other branches -> other branches may exist for the pleasure of the core team as they develop fixes and features
 
-###Development and Testing
+### Development and Testing
 
 Please Contribute!  Issues welcome. PRs even more welcome.  We strive to add specs for all new features and bug fixes.
 So please try to add a test spec with your change.
