@@ -39,8 +39,7 @@ both the client and server.  Have a look at some of the 700+ existing specs for 
 To get started clone the gem's repo, and switch to either the `master` (for minor and patch changes) 
 or `edge` (for new breaking feature content) branch, run 
 
-`bundle update`   
-`bundle exec rake test:prepare`
+`rake spec:prepare`  **note no bundle exec... this will do a bundle update for you**  
 then  
 `bundle exec rake`
 
