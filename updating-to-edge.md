@@ -26,7 +26,7 @@ task :default => :spec
 prepare = ["rake spec:prepare"]
 cibuild = ["bundle exec rake"]
 ```
-8. `git -am "setup edge"`
+8. `git commit -am "setup edge"`
 8. `git push origin edge`
 8. `gem build ...gemspec`
 5. `gem push ...gem`
