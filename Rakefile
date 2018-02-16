@@ -9,3 +9,8 @@ task :default do
   # show usage
 end
 
+namespace :spec do
+  task :prepare do
+    sh %{bundle update}
+  end
+end
