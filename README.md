@@ -5,7 +5,6 @@ Install instructions for the latest lap:
 source https://gems.ruby-hyperloop.org
 
 gem "opal-jquery", git: "https://github.com/opal/opal-jquery.git", branch: "master"
-gem "opal-rails", git: "https://github.com/opal/opal-rails.git", branch: "master"
 
 gem 'hyperloop', '~> 1.0.0.lap'
 gem 'hyper-spec', '~> 1.0.0.lap'
