@@ -31,5 +31,20 @@ namespace :hyperloop do
         end
       end
     end
+
+    desc "upload all hyperloop gems to rubygems"
+    task :push do
+      HYPERLOOP_REPOS.each do |repo|
+        Dir.chdir(File.join('..', repo)) do
+          best_time = Time.new(1970, 1, 1)
+          last_created_gem_fst = Dir.glob('*.gem').reduce([best_time, '']) do |gem_fst, gem|
+            mtime = File.stat(gem).mtime
+            mtime > gem_fst[0] ? [mtime, gem] : gem_fst
+          end
+          puts "pushing #{last_created_gem_fst[1]}"
+          `gem push #{last_created_gem_fst[1]}`
+        end
+      end
+    end
   end
 end
