@@ -1,4 +1,4 @@
 module Hyperloop
-  VERSION = '1.0.0.lap23'
-  ROUTERVERSION = '4.2.6.lap23'
+  VERSION = '1.0.0.lap24'
+  ROUTERVERSION = '4.2.6.lap24'
 end
