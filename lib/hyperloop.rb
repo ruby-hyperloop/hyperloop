@@ -1,6 +1,5 @@
 require 'hyperloop-config'
 require 'rails/generators'
-require 'hyper-model'
 
 Hyperloop.import 'reactrb/auto-import'
 Hyperloop.import 'hyper-router'
