@@ -4,6 +4,7 @@ namespace :hyperloop do
     def file_version_for(repo)
       case repo
       when 'hyper-component' then ['./lib/hyperloop/component/version', 'Hyperloop::Component::VERSION']
+      when 'hyper-console' then ['./lib/hyperloop/console/version', 'Hyperloop::Console::VERSION']
       when 'hyper-mesh' then ['./lib/hypermesh/version', 'Hypermesh::VERSION']
       when 'hyper-model' then ['./lib/hyperloop/model/version', 'Hyperloop::Model::VERSION']
       when 'hyper-operation' then ['./lib/hyper-operation/version', 'Hyperloop::Operation::VERSION']
