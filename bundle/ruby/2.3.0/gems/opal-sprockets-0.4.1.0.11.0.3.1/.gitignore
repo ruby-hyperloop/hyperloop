@@ -1,0 +1,13 @@
+.DS_Store
+*.gem
+.yardoc
+.bundle
+Gemfile.lock
+build/
+/.github_access_token
+/tmp
+.ruby-gemset
+.ruby-version
+.rvmrc
+.rspec-local
+/coverage

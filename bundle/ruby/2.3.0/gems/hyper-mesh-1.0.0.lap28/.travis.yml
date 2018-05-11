@@ -1,0 +1,27 @@
+language: ruby
+rvm:
+  - ruby
+services:
+  - mysql
+env:
+  - HYPER_DEV_GEM_SOURCE="https://gems.ruby-hyperloop.org" TZ=Europe/Berlin
+before_install:
+  - sudo apt-get install -y fonts-liberation
+  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - sudo dpkg -i google-chrome*.deb
+  - gem install bundler
+before_script:
+  - cd spec/test_app
+  - bundle update
+  - rails db:setup
+  - cd ../../
+  - chromedriver-update
+  - ls -lR ~/.chromedriver-helper/
+script: bundle exec rspec
+gemfile:
+  - gemfiles/opal_0_10_react-rails_2_3.gemfile
+  - gemfiles/opal_0_10_react-rails_2_4.gemfile
+  - gemfiles/opal_0_11_react-rails_2_4.gemfile
+matrix:
+  allow_failures:
+    - gemfile: gemfiles/opal_0_11_react-rails_2_4.gemfile

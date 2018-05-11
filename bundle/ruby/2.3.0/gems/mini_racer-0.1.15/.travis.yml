@@ -1,0 +1,19 @@
+language: ruby
+rvm:
+  - 2.1
+  - 2.2
+  - 2.3.3
+  - 2.4.0
+matrix:
+  include:
+    - rvm: 2.4.0
+      os: osx
+      osx_image: xcode8.2
+    - rvm: 2.4.0
+      os: osx
+      osx_image: xcode7.3
+dist: trusty
+sudo: true
+before_install:
+  - gem install bundler -v 1.12.0
+cache: bundler

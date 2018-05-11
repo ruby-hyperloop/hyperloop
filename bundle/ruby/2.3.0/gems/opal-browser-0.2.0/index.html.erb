@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Opal Browser - RSpec Runner</title>
+
+  <script>
+    window.onerror = function(msg, url, line) {
+      var error = document.createElement("div");
+          error.setAttribute("id", "rspec-error");
+          error.appendChild(document.createTextNode(msg));
+
+      document.body.appendChild(error);
+    }
+  </script>
+
+  <script src="spec/json2.js"></script>
+  <script src="spec/sizzle.js"></script>
+  <script src="spec/wgxpath.install.js"></script>
+
+  <%= javascript_include_tag @server.main %>
+</head>
+<body>
+</body>
+</html>
+

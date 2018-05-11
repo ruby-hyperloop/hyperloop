@@ -1,0 +1,19 @@
+current directory: /Users/rmitchellvanduyn/rubydev/hyperloop-edge/hyperloop/bundle/ruby/2.3.0/gems/mini_racer-0.1.15/ext/mini_racer_extension
+/Users/rmitchellvanduyn/.rvm/rubies/ruby-2.3.1/bin/ruby -r ./siteconf20180509-69625-19jvbvp.rb extconf.rb
+checking for main() in -lpthread... yes
+checking for main() in -lobjc... yes
+creating Makefile
+
+current directory: /Users/rmitchellvanduyn/rubydev/hyperloop-edge/hyperloop/bundle/ruby/2.3.0/gems/mini_racer-0.1.15/ext/mini_racer_extension
+make "DESTDIR=" clean
+
+current directory: /Users/rmitchellvanduyn/rubydev/hyperloop-edge/hyperloop/bundle/ruby/2.3.0/gems/mini_racer-0.1.15/ext/mini_racer_extension
+make "DESTDIR="
+compiling mini_racer_extension.cc
+clang: warning: argument unused during compilation: '-rdynamic'
+linking shared-object mini_racer_extension.bundle
+clang: warning: libstdc++ is deprecated; move to libc++
+
+current directory: /Users/rmitchellvanduyn/rubydev/hyperloop-edge/hyperloop/bundle/ruby/2.3.0/gems/mini_racer-0.1.15/ext/mini_racer_extension
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 mini_racer_extension.bundle ./.gem.20180509-69625-vj1ghi

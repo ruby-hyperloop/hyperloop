@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Gem in a Box</title>
+  <link href="<%= url '/atom.xml' %>" rel="self" />
+  <link href="<%= url '/' %>" />
+  <author><name>Gem in a Box</name></author>
+  <id><%= url '/atom.xml' %></id>
+  <% @gems.by_name do |name, versions| %>
+  <% newest_gem = versions.newest %>
+    <% spec = spec_for(name, newest_gem.number, newest_gem.platform) %>
+    <entry>
+      <id><%= name %></id>
+      <updated><%= spec.date.w3cdtf %></updated>
+      <title><%= name %> (<%= versions.size == 1 ? versions.oldest.number : "#{versions.oldest.number} - #{versions.newest.number}" %>)</title>
+      <author><name><%= spec.authors.join(", ") %></name></author>
+      <% versions.each do |version| %>
+        <link href="<%= url "/gems/#{version.gemfile_name}.gem" %>" />
+      <% end %>
+    </entry>
+  <% end %>
+
+  <updated>
+    <% if newest_gem = @gems.newest %>
+      <%= spec_for(newest_gem.name, newest_gem.number, newest_gem.platform).date.w3cdtf %>
+    <% else %>
+      <%= Date.today %>
+    <% end %>
+  </updated>
+</feed>

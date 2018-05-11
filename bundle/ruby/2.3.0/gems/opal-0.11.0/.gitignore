@@ -1,0 +1,20 @@
+.DS_Store
+*.gem
+.yardoc
+.bundle
+Gemfile.lock
+build/
+/.github_access_token
+/cdn
+/node_modules
+/gh-pages
+/tmp
+.ruby-gemset
+.ruby-version
+.rvmrc
+.rspec-local
+/coverage
+
+# Ignore old submodules, useful when switching branches
+spec/corelib
+spec/rubyspec

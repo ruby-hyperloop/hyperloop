@@ -19,11 +19,14 @@ Gem::Specification.new do |spec|
   spec.files       = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(tasks)/}) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'hyper-model', Hyperloop::VERSION
-  spec.add_dependency 'hyper-router', Hyperloop::ROUTERVERSION
+  # temporarily moved to installer until opal-jquery version issue is fixed
+  # spec.add_dependency 'hyper-model', Hyperloop::VERSION
+  # spec.add_dependency 'hyper-router', Hyperloop::ROUTERVERSION
+  # spec.add_dependency 'opal-rails', '~> 0.9.4'
+  # spec.add_dependency 'opal-jquery'
+
   spec.add_dependency 'hyperloop-config', Hyperloop::VERSION
   spec.add_dependency 'opal-browser', '~> 0.2.0'
-  spec.add_dependency 'opal-rails', '~> 0.9.4'
   spec.add_dependency 'react-rails', '>= 2.4.0', '< 2.5.0'
   spec.add_dependency 'mini_racer', '~> 0.1.15'
   spec.add_runtime_dependency 'rails', '>= 4.0.0'
