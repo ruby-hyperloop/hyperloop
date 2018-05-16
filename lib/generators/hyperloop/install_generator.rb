@@ -125,7 +125,7 @@ Hyperloop.configuration do |config|
   config.prerendering = :off # or :on
   config.import 'reactrb/auto-import' # will automatically bridge js components to hyperloop components
 #{"  config.import 'jquery', client_only: true  # remove this line if you don't need jquery" if skip_webpack?}
-  config.import 'opal-jquery', client_only: true # remove this line if you don't need jquery'
+  # config.import 'opal-jquery', client_only: true # remove this line if you don't need jquery'
 #{"  config.import 'opal_hot_reloader' if Rails.env.development?" unless options['skip-hot-reloader']}
 end
         RUBY
@@ -156,9 +156,6 @@ Opal.OpalHotReloader.$listen() // optional (port, false, poll_seconds) i.e. (808
     def add_gems
       gem 'hyper-model', Hyperloop::VERSION
       gem 'hyper-router', Hyperloop::ROUTERVERSION
-      #gem 'opal-rails', '~> 0.9.4'
-      #gem 'opal-jquery'
-      gem "opal-jquery", git: "https://github.com/opal/opal-jquery.git", branch: "master"
     end
 
     def install

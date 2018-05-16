@@ -22,8 +22,6 @@ Gem::Specification.new do |spec|
   # temporarily moved to installer until opal-jquery version issue is fixed
   # spec.add_dependency 'hyper-model', Hyperloop::VERSION
   # spec.add_dependency 'hyper-router', Hyperloop::ROUTERVERSION
-  # spec.add_dependency 'opal-rails', '~> 0.9.4'
-  # spec.add_dependency 'opal-jquery'
 
   spec.add_dependency 'hyperloop-config', Hyperloop::VERSION
   spec.add_dependency 'opal-browser', '~> 0.2.0'

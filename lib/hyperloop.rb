@@ -15,7 +15,6 @@ require 'generators/hyperloop/install_generator'
 require 'generators/hyper/component_generator'
 require 'generators/hyper/router_generator'
 begin
-  require 'opal-rails'
   require 'hyper-model'
   require 'hyper-router'
 rescue LoadError
