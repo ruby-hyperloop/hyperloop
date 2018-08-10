@@ -7,7 +7,12 @@ module Hyperloop
     class_option 'no-build', type: :boolean
 
     def insure_yarn_loaded
-      raise Thor::Error.new("please insure the yarn command is available") if `command -v yarn`.blank?
+      begin
+        yarn_version = `yarn --version`
+        raise Errno::ENOENT if yarn_version.blank?
+      rescue Errno::ENOENT
+        raise Thor::Error.new("please insure the yarn command is available if using webpacker")
+      end
     end
 
     def add_to_manifests

@@ -8,7 +8,12 @@ module Hyperloop
 
     def insure_yarn_loaded
       return if skip_webpack?
-      raise Thor::Error.new("please insure the yarn command is available if using webpacker") if `command -v yarn`.blank?
+      begin
+        yarn_version = `yarn --version`
+        raise Errno::ENOENT if yarn_version.blank?
+      rescue Errno::ENOENT
+        raise Thor::Error.new("please insure the yarn command is available if using webpacker")
+      end
     end
 
     def inject_react_file_js
