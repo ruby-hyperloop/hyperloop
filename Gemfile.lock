@@ -61,6 +61,8 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    archive-zip (0.11.0)
+      io-like (~> 0.3.0)
     arel (9.0.0)
     ast (2.4.0)
     babel-source (5.8.35)
@@ -68,6 +70,9 @@ GEM
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
     builder (3.2.3)
+    chromedriver-helper (1.2.0)
+      archive-zip (~> 0.10)
+      nokogiri (~> 1.8)
     concurrent-ruby (1.0.5)
     connection_pool (2.2.2)
     crass (1.0.4)
@@ -92,6 +97,7 @@ GEM
       uglifier
     i18n (1.1.0)
       concurrent-ruby (~> 1.0)
+    io-like (0.3.0)
     libv8 (6.3.292.48.1)
     loofah (2.2.2)
       crass (~> 1.0.2)
@@ -189,6 +195,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  chromedriver-helper
   geminabox (>= 0.13.11)
   hyperloop!
   opal-jquery!
